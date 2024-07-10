@@ -8,7 +8,7 @@ class TodoController extends Controller {
     // params validate, need `egg-validate` plugin
     // ctx.validate({ title: { type: 'string' } });
 
-    ctx.status = 201;
+    ctx.status = 200;
     ctx.body = await service.todo.create(ctx.request.body);
   }
 }

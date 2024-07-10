@@ -4,5 +4,5 @@
 module.exports = app => {
   const { router, controller } = app;
   router.get('/', controller.home.index);
-  router.get('/todo', controller.todo.create);
+  router.get('/v1/queryUserList', controller.todo.create);
 };
