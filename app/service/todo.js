@@ -24,6 +24,16 @@ class TodoService extends Service {
       errorCode: 0,
     };
   }
+  async login(todo) {
+    console.log(todo, 'login');
+    return {
+      success: true,
+      data: {
+        token : 'access'
+      },
+      errorCode: 0,
+    };
+  }
 }
 
 module.exports = TodoService;
